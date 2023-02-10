@@ -1,0 +1,52 @@
+
+<div class="login_can">
+
+  <div class="login_can_wrap">
+    <div class="login_can_txt">
+      <div class="login_txt_center">
+        <h1>fakebook</h1>
+        <p>Connect with friends and</p>
+        <p>the world around you on Facebook.</p>
+      </div>
+    </div>
+
+
+
+    <div class="link-signup">
+
+      <div class="sessions-new">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+            <div class="field email-regist login_wrapper">
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email or phone numeber  ' %>
+            </div>
+
+            <div class="field password-regist login_wrapper">
+              <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+            </div>
+
+            <% if devise_mapping.rememberable? -%>
+              <div class="field remember-login">
+                <%= f.check_box :remember_me, checked: true, hidden: true %>
+              </div>
+            <% end -%>
+
+            <div class="actions registration-button">
+              <%= f.submit "Log In" %>
+            </div>
+
+            <div class="sign_up">
+              <div class="sign_up_border">
+                <%= link_to 'Create new account', new_user_registration_path %>
+              </div>
+            </div>
+
+          <% end %>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+</div>

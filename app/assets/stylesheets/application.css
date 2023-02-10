@@ -1,0 +1,274 @@
+:root{
+    --color: #1877F2;
+    --body-bkg: #202324;
+    --btn-login-bkg: rgb(11, 87, 187);
+    --btn-create--bkg: rgb(53, 146, 34);
+    --footer-c: rgb(160, 152, 140);
+    --box-bkg: rgb(24, 26, 27);
+    --border: 1px solid rgb(57, 62, 64);
+    /* border: 1px solid #dddfe2; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;    
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white !important;
+    width: 100%;
+    height: 100%;
+}
+.login_can{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login_can_wrap{
+    width: 60%;
+    height: 100%;
+    display: flex;
+
+}
+.login_can_txt{
+    margin-top: 35%;
+
+    height: fit-content;
+    width: 50% !important;
+}
+.login_txt_center{
+    display: flex;
+    flex-direction: column;
+}
+.login_txt_center h1{
+    color: #1877F2;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.login_txt_center p{
+    color: white;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 32px;
+}
+.link-signup{
+    width: 50%;
+    height: fit-content;
+    margin-top: 30%;
+}
+.sessions-new{
+    background-color: var(--box-bkg);
+    height: fit-content;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.login_wrapper input{
+    height: 30px;
+    width: 80%;
+    border: var(--border);
+    margin-bottom: 10px;
+    outline: none !important;
+    border-radius: 6px;
+    background-color: var(--box-bkg);
+    padding: 10px;
+    line-height: 100%;
+    font-size: 17px;
+}
+.login_wrapper input:focus{
+    border-color: var(--color);
+}
+
+.registration-button{
+    width: 100%;
+
+}
+.registration-button input{
+    background-color: #1877F2;
+    border: none !important;
+    outline: none !important;
+    line-height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 10px;
+    width: 86%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sign_up{
+    display: flex;
+    height: fit-content !important;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+}
+.sign_up_border{
+    border-top: var(--border);
+    width: 86%;
+    height: fit-content;
+    padding-top: 30px;
+    margin-bottom: 15px;
+
+}
+.sign_up_border a{
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--btn-create--bkg);
+    text-decoration: none;
+    cursor: pointer;
+}
+.signup_can{
+    width: 100%;
+    height: fit-content;    
+    display: flex;
+    justify-content: center;
+}
+.registrations_new{
+    width: 50%;
+    height: fit-content;
+    background-color: var(--box-bkg);
+    margin-top: 8%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.signup_can_wrap{
+    border-bottom: var(--border);
+    height: fit-content;
+    padding: 5px;   
+    padding-bottom: 10px;   
+    margin-bottom: 10px;
+}
+.signup_can_wrap h1{
+    font-size: 2.5rem;
+}
+.signup_can_wrap p{
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: var(--footer-c);
+}
+.signup_can form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    height: fit-content;
+    width: 100%;
+    display: flex
+}
+.fname {
+    width: 47%;
+    height: fit-content;
+}
+.lname {
+    height: fit-content;
+    width: 47%;
+    margin-left: 4.4%;
+
+}
+.fname input, .lname input{
+    height: 30px;
+    border: var(--border);
+    border-radius: 6px;
+    outline: none !important;
+    background-color: var(--box-bkg);
+    line-height: 100%;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+.email_regist{
+    margin-top: 12px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.email_regist input{
+    width: 100%;
+    height: 30px;
+    border: var(--border);
+    border-radius: 6px;
+    outline: none !important;
+    background-color: var(--box-bkg);
+    line-height: 100%;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+}
+.password{
+    margin-top: 12px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+.password_regist {
+    width: 47%;
+    height: fit-content;
+}
+.confirm_regist {
+    height: fit-content;
+    width: 47%;
+    margin-left: 4.4%;
+
+}
+.password_regist input, .confirm_regist input{
+    height: 30px;
+    border: var(--border);
+    border-radius: 6px;
+    outline: none !important;
+    background-color: var(--box-bkg);
+    line-height: 100%;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+.conditions{
+    color: var(--footer-c);
+    margin-bottom: 12px;
+}
+.signup_button{
+    margin-top: 12px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.signup_button input{
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.2rem;
+    background-color: var(--btn-create--bkg);
+    border-radius: 6px;
+    width: 50%;
+    outline: none !important;
+    border: none;
+}
+.signup_button input:focus{
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.2rem;
+    background-color: var(--btn-create--bkg);
+    border-radius: 6px;
+    width: 50%;
+    outline: none !important;
+    border: none;
+}
